@@ -1,0 +1,57 @@
+/* Main container for contact */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    gap: 30px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  /* Center the heading at the top */
+  .heading {
+    text-align: center;
+    font-size: 28px; /* Increased font size for better visibility */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Dark text color for contrast */
+  }
+  
+  /* Container for all details */
+  .details-container {
+    display: flex;
+    justify-content: space-around; /* Space details evenly */
+    width: 100%; /* Full width */
+    max-width: 800px; /* Maximum width for large screens */
+    flex-wrap: nowrap; /* Prevent wrapping to keep items on the same row */
+  }
+  
+  /* Individual detail box */
+  .detail-box {
+    background-color: #ffffff; /* White background for detail box */
+    padding: 15px; /* Padding inside detail box */
+    border-radius: 8px; /* Rounded corners for detail box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for detail box */
+    width: 30%; /* Width of each detail box */
+    margin: 30px; /* Margin between boxes */
+    text-align: center; /* Center text */
+  }
+  
+  /* Icon image styling */
+  .icon-image {
+    width: 200px; /* Set width for icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px; /* Space above the image */
+  }
+  
+  /* Email link styling */
+  .email-link {
+    color: #3498DB; /* Email link color */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .email-link:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+  }

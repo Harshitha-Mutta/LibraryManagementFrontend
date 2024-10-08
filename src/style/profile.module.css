@@ -1,0 +1,214 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 1px;
+}
+
+
+.user-details {
+  display: flex;
+  align-items: center;
+}
+
+.user-details-content {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 30px;
+  width: 550px;
+  height: auto; /* Allow the height to grow */
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-weight: 550;
+  font-size: 18px;
+}
+
+.user-details-content span {
+  font-weight: 500;
+  color: #5792cd;
+}
+
+.edit-container {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  margin-left: 550px;
+}
+
+.edit {
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px 30px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-weight: 550;
+}
+
+.edit:hover {
+background-color: #27425c;
+  color: white;
+}
+
+input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%; /* Ensure it fits the container */
+  font-size: 16px;
+  font-weight: 500;
+  color: #34495e;
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 3px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #5792cd; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(87, 146, 205, 0.3);
+  background-color: #fff;
+}
+
+input:hover {
+  background-color: #f0f0f0;
+}
+
+input::placeholder {
+  color: #999;
+  font-weight: 400;
+}
+
+.password-change {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #27425c;
+}
+
+.otp-button {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745; /* Green background for Send OTP and Verify buttons */
+  color: white; /* Button text color */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left:35%;
+}
+
+.otp-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.otp-input {
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 22px); /* Full width with padding */
+}
+
+.password-input {
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 22px); /* Full width with padding */
+}
+
+.password-button {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #17a2b8; /* Teal background for Change Password button */
+  color: white; /* Button text color */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.password-button:hover {
+  background-color: #138496; /* Darker teal on hover */
+}
+/* Style for the sign-up button */
+.sign-up-button {
+  background-color: #007bff; /* Primary color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  font-size: 16px; /* Font size */
+  margin-left:-500px;
+}
+
+.sign-up-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+.signup-button{
+  background-color: #007bff; /* Primary color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  font-size: 16px; /* Font size */
+  margin-top: 15px;
+}
+/* Style for the sign-up modal */
+.signup-form {
+  background-color: white; /* Modal background color */
+  padding: 50px; /* Padding inside the modal */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Modal overlay (if needed) */
+.modal-overlay {
+  position: fixed; /* Fixed positioning */
+  top: 0; /* Cover the full screen */
+  left: 0; /* Cover the full screen */
+  width: 100%; /* Cover the full width */
+  height: 100%; /* Cover the full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 999; /* On top of other elements */
+}
+
+.profile-pic-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.upload-label {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+  background-color: #0056b3;
+}
+
+.upload-input {
+  display: none; /* Hide the input file element */
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}

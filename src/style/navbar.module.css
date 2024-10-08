@@ -1,0 +1,27 @@
+.nav-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(34, 89, 166); /* Change navbar background to white */
+    border-bottom: 2px solid #333; /* Optional: Add a bottom border for separation */
+  }
+  
+  .nav-container li {
+    float: left;
+  }
+  
+  .nav-container li a {
+    display: block;
+    color: white; /* Change text color to blue */
+    text-align: center;
+    padding: 20px 16px; /* Increase the padding for more height */
+    text-decoration: none;
+    font-weight: bold; /* Optional: Make the text bold */
+  }
+  
+  .nav-container li a:hover {
+    background-color: #ddd; /* Add hover effect */
+    color: black; /* Change text color on hover */
+  }
+  

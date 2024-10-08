@@ -1,0 +1,211 @@
+/* src/components/Dashboard.css */
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.vertical-navbar {
+  width: 200px;
+  background-color: #27425c;
+  color: white;
+  padding: 20px;
+}
+
+.vertical-navbar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+   gap: 1px;
+}
+
+.vertical-navbar li {
+  padding: 15px 0;
+  cursor: pointer;
+
+}
+
+.vertical-navbar ul li:hover {
+  background-color: #34495e;
+}
+
+.content-area {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ecf0f1;
+  background-image: url('https://img.freepik.com/free-photo/abstract-blur-empty-green-gradient-studio-well-use-as-background-website-template-frame-business-report_1258-52616.jpg');
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.count-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap:30px;
+  padding:20px 40px;
+}
+.count-box{
+  width:150px;
+  height:150px;
+  padding:20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: white;
+  border-radius: 25px;
+}
+.count-box:hover{
+  background-color: #4e6175;
+  color: white;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.image-content{
+  width:80px;
+  height:80px;
+}
+.image-content img{
+  width:100%;
+  height: 100%;
+}
+.count{
+  font-size:"18px";
+  font-weight: 550;
+}
+table{
+  margin-bottom:100px;
+  }
+
+  .user-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .user-box{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    border-radius: 25px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    font-size: 18px;
+    font-weight: 550;
+  }
+.user-box:hover{
+  background-color: #192d42;
+  color: white;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+  .user-content-box{
+    display: flex;
+    gap:40px;
+    flex-wrap: wrap;
+  }
+  .user-box span{
+    font-weight: 500;
+    color: #5792cd
+  }
+
+.search-bar-container{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+.search-bar{
+  border-radius: 15px;
+  border: 0.5px solid black;
+  padding: 10px;
+  background-color: white;
+}
+input{
+  border: none;
+}
+input:focus-visible{
+  outline: none;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter-container input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.filter-container select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 150px;
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Additional existing CSS */
+/* Chart container style */
+.chart-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f5f5f5; /* Light background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Style for the actual chart */
+.custom-chart {
+  height: 100%; /* Ensure chart takes full height */
+  position: relative;
+}
+
+/* Custom tooltip */
+.recharts-tooltip-wrapper {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom X and Y axis styles */
+.recharts-cartesian-axis-tick text {
+  fill: #333; /* Text color for axis */
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.recharts-label {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Line customization */
+.recharts-line {
+  stroke-width: 3px;
+}
+
+.recharts-line .recharts-line-curve {
+  stroke-dasharray: none; /* Solid line */
+}
+
+/* Grid line customization */
+.recharts-cartesian-grid line {
+  stroke: #ccc;
+  stroke-dasharray: 5 5;
+}

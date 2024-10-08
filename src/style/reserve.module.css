@@ -1,0 +1,195 @@
+h2 {
+    color: #343a40; /* Dark gray for headings */
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+}
+
+label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #ffffff; /* White background */
+    cursor: pointer;
+    transition: border-color 0.2s; /* Smooth border color transition */
+}
+
+select:hover {
+    border-color: #80bdff; /* Blue border on hover */
+}
+
+.error-message {
+    color: #dc3545; /* Bootstrap danger color */
+    margin: 20px 0;
+    font-weight: bold;
+    text-align: center; /* Centered error message */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6; /* Light gray border */
+}
+
+th {
+    background-color: #1a3754; /* Light gray for header */
+    color: #eff1f3; /* Dark gray for text */
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Light hover effect */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra stripe effect */
+}
+
+td {
+    color: #495057; /* Dark gray for text */
+    font-size: 15px;
+}
+
+.status-icon {
+    margin-right: 5px; /* Space between icon and status text */
+}
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    border: 1px solid #888;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px; /* Adjust width as needed */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form styling */
+.modal-content form input,
+.modal-content form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.modal-content form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.modal-content form button:hover {
+    background-color: #45a049;
+}
+
+.modal-content form input[type="text"],
+.modal-content form input[type="date"] {
+    font-size: 16px;
+}
+.add-button,.cancel-button {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px; /* Space below the button */
+}
+.add-button {
+    background-color: #353cb9; /* Green */
+    margin-right: 20px;
+}
+.add-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+.cancel-button {
+    background-color: #f44336; /* Red */
+}
+.cancel-button:hover {
+    background-color: #d32f2f; /* Darker Red for cancel button on hover */
+}
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Space above and below pagination */
+}
+
+.pagination button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 0 5px; /* Space between buttons */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.pagination button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.pagination button:disabled {
+    background-color: #c0c0c0; /* Gray for disabled buttons */
+    cursor: not-allowed; /* Change cursor for disabled state */
+}
+
+.pagination span {
+    margin: 0 10px; /* Space around the page indicator */
+    font-size: 16px; /* Font size for page indicator */
+}

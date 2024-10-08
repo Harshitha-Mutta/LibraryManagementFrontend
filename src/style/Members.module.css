@@ -1,0 +1,142 @@
+.members-container {
+    padding: 20px;
+  }
+  
+  .filter-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Spacing between input and select */
+  }
+  
+  .user-table {
+    width: 80%; /* Adjust overall table width */
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  .user-table th, .user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .user-table th {
+    background-color: #171794;
+    color: rgb(241, 237, 237);
+    text-align: left;
+  }
+  
+  .info-icon {
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+  }
+  
+  .close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: red;
+  }
+  .email-column {
+    width: 30%; /* Reduce the width of the email column */
+  }
+  
+  .info-column {
+    width: 5%; /* Reduce the width of the info column */
+  }
+  
+  .info-icon-cell {
+    text-align: center; /* Center the info icon */
+  }
+  
+  .info-icon {
+    font-size: 1.5rem; /* Make the info icon larger */
+    color: #007bff;
+    cursor: pointer;
+  }
+  .search-input {
+    width: 200px; /* Adjust this value as needed to reduce the size */
+     /* Optional: Padding for better UI */
+  }
+  
+  select {
+    padding: 5px; /* Optional: Padding for consistency */
+  }
+  .dropdown {
+    width: 120px; /* Set width of the dropdown */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .dropdown option {
+    padding: 5px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .dropdown:focus {
+    outline: none;
+    border-color: #007bff; /* Highlight the border on focus */
+  }
+  
+  .dropdown:hover {
+    border-color: #007bff; /* Change border color on hover */
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .pagination-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .pagination-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination-button:hover:not(:disabled) {
+    background-color: #45a049;
+  }
+  
+  .pagination span {
+    font-size: 16px;
+    margin: 0 10px;
+  }

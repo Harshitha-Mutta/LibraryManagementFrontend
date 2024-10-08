@@ -1,0 +1,139 @@
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+     background-image: url("https://wallpapers.com/images/featured/book-5q6xbfxwtbme5kaj.jpg"); 
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden; 
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;  
+    max-width: 1440px;
+    width: 100%;
+    overflow-y: hidden; 
+}
+
+.side {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    justify-content: center;    
+    display: flex;
+    align-items: center;
+}
+
+.section {
+    background-color: #dbdbdb;
+    border-radius: 50px;
+    width: 40%;
+    height: fit-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-section {
+    width: 90%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    /* background-image: url("https://wallpapers.com/images/hd/home-library-703jd3f0ft099r57.jpg"); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: gradient 3s ease infinite; 
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.signin-container {
+    padding: 40px 20px;
+
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #1a13c9;
+    font-family: cursive;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    width: 80%;
+    border-radius: 25px;
+}
+
+.input-field {
+    border-radius: 15px;
+    padding: 20px 10px;
+    width: 100%;
+    border: none;
+    font-family: cursive;
+}
+
+.login-page {
+    font-size: 20px;
+    font-family: cursive;
+}
+
+/* New button styles for Login and Signup */
+.button-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    background-color: #2623b6;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-family: cursive;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #1f31a7;
+}
+
+.submit-button:active {
+    background-color: #1937b3;
+}

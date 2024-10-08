@@ -1,0 +1,110 @@
+/* src/FineTable.css */
+.fine-table-container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .fine-table  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.fine-table th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6; /* Light gray border */
+}
+
+.fine-table th {
+    background-color: #1a3754; /* Light gray for header */
+    color: #eff1f3; /* Dark gray for text */
+    font-weight: bold;
+}
+
+.fine-table tr:hover {
+    background-color: #f1f1f1; /* Light hover effect */
+}
+
+.fine-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra stripe effect */
+}
+
+.fine-table td {
+    color: #495057; /* Dark gray for text */
+    font-size: 15px;
+}
+
+  
+  .fine-table td .fa-icon {
+    font-size: 18px;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .pagination button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #007bff;
+    padding: 8px 16px;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination button:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .pagination button.active {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+  } 
+  /* Style for the Pay button */
+.pay-button {
+  background-color: #28a745; /* Green color for the pay button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left:20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Change background color on hover */
+.pay-button:hover {
+  background-color: #218838; /* Darker shade of green on hover */
+}
+
+/* Style for the success message */
+.success-message {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #d4edda; /* Light green background for success */
+  color: #155724; /* Dark green text color */
+  border: 1px solid #c3e6cb; /* Border for the success message */
+  font-size: 16px;
+  text-align: center;
+  max-width: 500px; /* Set a max width */
+  margin: 20px auto; /* Center align */
+}
+.error-message {
+  color: #d9534f; /* Bootstrap danger color */
+  background-color: #f2dede; /* Light red background */
+  border: 1px solid #ebccd1; /* Red border */
+  padding: 10px; /* Padding for spacing */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 15px; /* Space below the message */
+  font-size: 1rem; /* Font size */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+}
